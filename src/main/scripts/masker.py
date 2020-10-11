@@ -9,6 +9,7 @@ def applySubnetMask(ip, mask):
         mask_section = int(mask_list[index])
         print(ip_section)
         print(mask_section)
+        print("Masked: " + str((ip_section & mask_section)))
         result = result + str((ip_section & mask_section)) + '.'
 
     return result[:-1]

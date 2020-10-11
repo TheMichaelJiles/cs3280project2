@@ -9,5 +9,5 @@ def isValidOctectNetmask(mask):
     return validate.match(mask)
 
 def isValidBitNumberNotationNetmask(mask):
-    validate = re.compile("(\/1[0-9])|(\/2[0-9])|(\/3[0-1])|(\/[1-9])")
+    validate = re.compile("(\/1[0-9])|(\/2[0-9])|(\/3[0-2])|(\/[1-9])")
     return validate.match(mask)
