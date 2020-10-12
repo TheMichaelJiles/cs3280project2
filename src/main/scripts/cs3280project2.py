@@ -3,6 +3,7 @@
 import sys
 import validation
 import masker
+import http.server
 
 def main():
     ip = sys.argv[1]
