@@ -1,4 +1,4 @@
-def applySubnetMask(ip, mask):
+def applyIPV4SubnetMask(ip, mask):
     ip_list = ip.split('.')
     mask_list = mask.split('.')
     result = ''
@@ -8,6 +8,17 @@ def applySubnetMask(ip, mask):
         result = result + str((ip_section & mask_section)) + '.'
 
     return result[:-1]
+
+def applyIPV6SubnetMask(ip, mask):
+    ip_list = ip.split(':')
+    for section in ip_list
+        for char in range(len(section) - 4):
+            section = section + "0"
+        ip += section
+    result = ''
+    for index in range(mask):
+        result += ip_list
+
 
 def convertN_NotationToOctet(mask):
     mask = mask.replace('/', '')
